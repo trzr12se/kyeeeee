@@ -1,5 +1,8 @@
-[functions]
-  directory = "netlify/functions"
-
 [build]
-  publish = "." 
+  functions = "netlify/functions"
+  publish = "."
+
+[[redirects]]
+  from = "/send-mail"
+  to = "/.netlify/functions/sendEmail"
+  status = 200
