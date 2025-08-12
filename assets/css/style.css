@@ -1,0 +1,238 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4F4F4 !important;
+}
+
+.t-home {
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: inherit;
+}
+
+.p-rel {
+    position: relative !important;
+}
+
+.t-logo {
+    text-align: center;
+}
+
+.t-logo img {
+    width: 200px;
+}
+
+.t-logo h1 {
+    font-weight: 700;
+    font-size: 56px;
+    color: #333;
+}
+
+.connect-text {
+    display: inline-flex;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: #fff;
+}
+
+.c-img {
+    background-color: #eee;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding:20px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.c-img img {
+    width: 100%;
+}
+
+.connect-text span {
+    font-size: 24px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.form-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.form-top p {
+    margin: 0px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.form-box button {
+    padding: 10px 15px;
+}
+
+.form-box button svg {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -2px;
+    margin-right: 4px;
+}
+
+.form-box-heading {
+    border-top: 1px solid #ddd;
+    margin-top: 15px !important;
+    padding-top: 15px !important;
+}
+
+.form-box-heading h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-box-heading p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn.activeForm{
+    background-color: #fff!important;
+    border: 1px solid #c5c5c5;
+    color: rgb(64, 64, 64);
+    font-size:13px;
+}
+
+.btn.activeForm:hover {
+    color: rgb(64, 64, 64);
+}
+
+.btn.formactive{
+    background-color: #5cb85c!important;
+    border: #5cb85c!important;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.key_input::placeholder {
+    color: #666666c4;
+    opacity: 1; /* Firefox */
+  }
+  
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #5cb85c!important;
+    color: #fff !important;
+    border-radius: 10px !important;
+    border: none !important;
+    font-weight: 700 !important;
+}
+
+.nav-tabs {
+    border-bottom: 0px !important;
+}
+
+.nav-tabs button {
+    padding: 8px 20px !important;
+    font-size: 14px;
+    border: 1px solid #ddd !important;
+    border-radius: 10px !important;
+    color: #555 !important;
+    margin-right: 10px !important;
+}
+
+.k-inputs {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.k-inputs input {
+    margin-bottom: 5px;
+    padding: 8px 10px;
+}
+
+.phone-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.phone-box h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.phone-box p {
+    font-weight: 600;
+}
+
+#error-msg {
+    color: red;
+}
+  
+#valid-msg {
+    color: #00c900;
+}
+  
+input.error {
+    border: 1px solid #ff7c7c;
+}
+  
+.hide {
+    display: none;
+}
+
+.phone-input {
+    margin-bottom: 5px;
+    padding: 8px 10px;
+    width: 100% !important;
+}
+
+
+.iti {
+    width: 100%;
+}
+
+.iti__search-input {
+    padding: 8px;
+}
+
+input {
+    outline: none;
+}
+
+#phn-box {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+
+    .t-home {
+        height: unset;
+        position: unset;
+    }
+
+    .nav-tabs button {
+        margin-bottom: 10px !important;
+    }
+    
+}
